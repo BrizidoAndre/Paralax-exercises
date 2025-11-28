@@ -1,0 +1,102 @@
+:root {
+    --green: #359181;
+    --dark: #003329;
+    --red: tomato;
+    --white: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: var(--green);
+    pointer-events: none;
+    margin-right: auto;
+}
+
+.navigation{
+    margin-right: auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--green);
+    padding: .5rem 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a.active {
+    background: var(--green);
+    color: #fff;
+}
+
+.paralax {
+    position: relative;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.paralax img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#plant{
+    position: relative;
+    z-index: 2;
+}
+
+#text {
+    color: var(--white);
+    position: absolute;
+    font-size: 5rem;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+section.second-paralax {
+    background-color: var(--dark);
+    padding: 5rem;
+    color: var(--white);
+}
+
+.second-paralax{
+    position: relative;
+    z-index: 3;
+}
+
+.second-paralax h2 {
+    margin-bottom: 2rem;
+}
+.second-paralax p{
+    line-height: 2;
+}

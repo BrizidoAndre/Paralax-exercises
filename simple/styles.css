@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* **Mude a altura de 100vh para 100% no html e remova do body** */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* 1. Mova o SNAP TYPE para o BODY/VIEWPORT */
+    scroll-snap-type: y mandatory;
+}
+
+/* 2. O contêiner interno não deve ser o contêiner de rolagem */
+.container-scroll {
+    /* Nenhuma propriedade de rolagem aqui */
+}
+
+.paralax {
+    /* 3. As seções mantêm o alinhamento e o Parallax */
+    scroll-snap-align: center;
+    min-height: 100vh;
+    background-attachment: fixed; /* Isso funciona quando o body está rolando */
+    background-position: center;
+    background-size: cover;
+}
+
+/* ... (as classes de imagem permanecem as mesmas) ... */
+
+.feraligatr {
+    background-image: url("assets/160feraligatr1920x1200.jpg");
+}
+
+.tepig {
+    background-image: url("assets/498tepig1920x1200.jpg");
+}
+
+.chikorita {
+    background-image: url("assets/152chikorita1920x1200.jpg");
+}
+
+.dewott {
+    background-image: url("assets/502dewott1920x12001.jpg");
+}
